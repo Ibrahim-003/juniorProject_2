@@ -1,0 +1,155 @@
+:root {
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desatured-blue: hsl(238, 22%, 44%);
+    --brigth-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --white: #fff;
+    --light-gray: hsl(0, 0%, 75%);
+    --primary-font: 'Open Sans', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
+    --header-height: 3rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+    font-family: var(--primary-font);
+}
+
+body {
+    background-color: var(--white);
+    color: var(--very-dark-blue);
+}
+
+h1,
+h2,
+input,
+button,
+a {
+    font-family: var(--secondary-font);
+}
+
+h1 {
+    font-size: clamp(26px, 5vw, 48px);
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.4;
+}
+
+h2 {
+    font-size: clamp(18px, 4vw, var(--fz-heading));
+}
+
+a,
+a:active,
+a:visited {
+    text-decoration: none;
+    display: block;
+    font-size: var(--fz-sm);
+    color: var(--very-dark-blue);
+}
+
+button {
+    display: block;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: var(--little-white);
+    font-size: .95rem;
+}
+
+p {
+    margin: 0;
+    line-height: 1.6;
+    max-width: 600px;
+    font-size: clamp(var(--fz-sm), 3vw, var(--fz-lg));
+}
+
+cite {
+    display: block;
+    font-family: var(--secondary-font);
+    font-style: normal;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+div, address{
+    width: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/* components */
+
+.component-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+/* utilities */
+
+.vertical-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-align {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify_container-left {
+    justify-content: flex-start;
+}
+
+.align_container-left {
+    align-items: flex-start;
+}
+
+
+
+.text-center {
+    text-align: center;
+}
+
+.box-shadow_1 {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
